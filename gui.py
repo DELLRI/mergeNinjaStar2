@@ -51,7 +51,7 @@ class ArtifactCalculatorApp:
         tk.Button(btn_frame, text="출석체크", font=("Arial", 12, "bold"), command=self.on_attendance, width=10).pack(side="left", padx=(0, 10))
         tk.Label(btn_frame, text="'출석체크'를 누르시면\n일일입장 횟수만큼\n입장횟수가 증가합니다.", justify="left", bg="#FFF2CC", relief="solid", borderwidth=1, padx=10, pady=5).pack(side="left")
 
-        info_text = "※ 하단 표의 '추천레벨'은 직접 수정 가능합니다.\n\n노란 배경색의 수치만 변경해주세요.\n'입장 횟수'와 '다이아'를 입력 후\n'계산'을 누르세요."
+        info_text = "※ 하단 표의 '추천레벨'은 직접 수정 가능합니다.\n\n노란 배경색의 수치만 변경해주세요.\n'입장 횟수'와 '다이아'를 입력 후\n'계산'을 누르세요. \n그이후에 적용을 누르면 저장및 계산이 완료됩니다."
         tk.Label(right_frame, text=info_text, justify="left", bg="#FFF2CC", relief="solid", borderwidth=1, padx=10, pady=15).pack(anchor="w", fill="x", pady=5)
 
         tk.Button(right_frame, text="최적화 계산 🚀", font=("Arial", 14, "bold"), bg="#EAEAEA", command=self.on_calculate, width=15).pack(pady=5)
